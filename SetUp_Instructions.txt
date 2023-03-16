@@ -1,0 +1,33 @@
+Grasshopper Rhino Hops VSC @ www.wickersonstudios.com
+
+Instructions:
+
+1.  Open Anaconda3 Navigator
+2.  Launch Powershell Prompt
+3.  pip install ghhops_server flask
+4.  pip install (all necessary python 3.0 libraries like numpy, pandas, scikit-learn etc...)
+5.  Open Rhino and Grasshopper and load the .gh scripts one at a time into Rhino7
+6.  Open Visual Studio Code (VSC)
+7.  Open folder... Select Folder
+8.  Click on Folder in VSC and click app.py
+9.  select Terminal -> New Terminal and size at bottom of app.py script
+10. press F5 and select Flask Launch and debug with Flask application
+    Test #1...
+11. Disconnect and reconnect wire to the Hops component on the Grasshopper Canvas
+    If this fails...
+12. copy http://127.0.0.1:5000 address in  VSC Terminal (to call app.py @hops.component functions on the grasshopper canvas)
+13. Return to the grasshopper Canvas and drag a new Hops Component underneath the hops node your are trying to run
+14. Rt click on the new hops component, select path and paste the http://127.0.0.1:5000 address followed by the @hops.component name, (example /tell_test_txt)
+    this must include the / symbol at the beginning
+15. Rt click again on the hops node and unselect the Cashe In Memory and Cache on Server boxes
+16. Repeat the same process for every hops component on the grasshopper canvas when necessary
+    Tip #1...
+17. Create your own .gh scripts with the @hops.components form scratch 
+    and add to the app.py file with your own creative @hops.component functions
+    Tip #2...
+18. Use github Copilot and or chatGPT in VSC to predict and extent the app.py script.
+
+Sincerely, 
+Michael Wickerson
+www.wickerstudios.com
+.gh file data assets
